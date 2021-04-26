@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <script src="quiz.js"></script>
+</head>
+<body>
+<div class="main_div">
+    <h1 id="title"></h1>
+    <h1 id="description"></h1>
+    <img id="img"><br>
+    <div id="wrap">
+        <h1 id="q_id"></h1>
+        <h1 id="q_title"></h1><br>
+        <div class="choices" id="mChoices">
+            <p>---Single selection---</p>
+            <input type="radio" id="mChoice1" name="mChoice" class="radio" value="0">
+            <label for="mChoice1" id="lbl1" class="lbl"></label><br>
+            <input type="radio" id="mChoice2"  name="mChoice" class="radio" value="0">
+            <label for="mChoice2" id="lbl2" class="lbl"></label><br>
+            <input type="radio" id="mChoice3"  name="mChoice" class="radio" value="0">
+            <label for="mChoice3" id="lbl3" class="lbl"></label><br>
+            <input type="radio" id="mChoice4" name="mChoice" class="radio" value="0" >
+            <label for="mChoice4" id="lbl4" class="lbl"></label> <br>
+        </div>
+        <div class="choices" id="tfChoices">
+            <p>---True & False---</p>
+            <input type="radio" id="tfChoice1" name="true_false" class="radio" value="true">
+            <label for="tfChoice1" id="lblt" class="lbl"></label><br>
+            <input type="radio" id="tfChoice2" name="true_false" class="radio" value="false">
+            <label for="tfChoice2" id="lblf" class="lbl"></label>
+        </div>
+        <div class="choices" id="cbChoices">
+            <p>---Multiple selection---</p>
+            <input type="checkbox" id="cbChoice1" name="cbChoice" class="radio" value="0">
+            <label for="cbChoice1" id="cbLbl1" class="lbl"></label><br>
+            <input type="checkbox" id="cbChoice2" name="cbChoice" class="radio" value="0">
+            <label for="cbChoice2" id="cbLbl2" class="lbl"></label><br>
+            <input type="checkbox" id="cbChoice3" name="cbChoice" class="radio" value="0">
+            <label for="cbChoice3" id="cbLbl3" class="lbl"></label><br>
+            <input type="checkbox" id="cbChoice4" name="cbChoice" class="radio" value="0">
+            <label for="cbChoice4" id="cbLbl4" class="lbl"></label> <br>        
+        </div><br>
+        <button class="button" id="btn" onclick="timed()"><span>Next</span></button>
+        <div class="result" id="results">
+            <h1></h1>
+        </div>
+        <button type="submit" class="button" id="btn_result" onclick="setTimeout(results(), 3000);"><span>Results</span></button>
+    </div>
+</div>
+</body>
+</html> 
+
